@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--textový font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--font awesome ikony-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="projekt1.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="umelci.html">Umělci</a></li>
+                <li><a href="vydani.html">Vydání</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+                <li><a href="zanry.html">Žánry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!-- Vyhledávací sekce (zatím nefunkční)-->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Hledat podle názvu nebo interpreta">
+            <select class="genre">
+                <option value="">Vyberte žánr</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="classical">Klasická</option>
+                <option value="electronic">Elektronická</option>
+                <option value="hip-hop">Hip-hop</option>
+            </select>
+            <button onclick="searchDatabase()">Hledat</button>
+        </div>
+    
+        <!-- Sekce s hudebními vydáními -->
+        <div class="albums-container">
+            <div class="album">
+                <h3>Album 1 - Interpreti 1</h3>
+                <p><span class="genre">Žánr:</span> Rock</p>
+                <p><strong>Datum vydání:</strong> 1. ledna 2024</p>
+                <p><strong>Popis:</strong> Toto album je příkladem inovativního přístupu v rockové hudbě, s novými zvuky a silnými melodiemi.</p>
+            </div>
+            
+            <div class="album">
+                <h3>Album 2 - Interpreti 2</h3>
+                <p><span class="genre">Žánr:</span> Pop</p>
+                <p><strong>Datum vydání:</strong> 15. února 2023</p>
+                <p><strong>Popis:</strong> Album plné chytlavých melodií a energických rytmů, které zaujmou každého milovníka popu.</p>
+            </div>
+            
+            <div class="album">
+                <h3>Album 3 - Interpreti 3</h3>
+                <p><span class="genre">Žánr:</span> Jazz</p>
+                <p><strong>Datum vydání:</strong> 25. července 2022</p>
+                <p><strong>Popis:</strong> Skladby plné improvizace a sofistikovaného zvuku, které spojují tradiční jazz s moderními prvky.</p>
+            </div>

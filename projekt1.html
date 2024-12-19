@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--textový font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--font awesome ikony-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="projekt1.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="umelci.html">Umělci</a></li>
+                <li><a href="vydani.html">Vydání</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+                <li><a href="zanry.html">Žánry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div id="logo">
+            <img src="Logo (2).png" alt="">
+        </div>
+        <!-- Sekce Vítejte -->
+        <section id="uvod">
+            <h1>Vítejte v Hudební Databázi</h1>
+            <div>
+              <p>Vítejte na naší hudební databázi a fóru! Jsme rádi, že jste se k nám připojili, abyste objevovali, diskutovali a sdíleli svou vášeň pro hudbu. 
+                Na našem webu najdete rozsáhlou databázi hudebních alb, umělců a skladatelů z celého světa. 
+                Můžete se zapojit do diskuzí o svých oblíbených interpretech, sledovat novinky ze světa hudby a najít doporučení na nová alba. <br>
+                Ať už jste fanoušek rocku, popu, elektroniky nebo jakéhokoliv jiného žánru, u nás se vždy najde něco, co vás zaujme. Přejeme příjemné prozkoumávání a těšíme se na vaše příspěvky!</p>
+            </div>
+          </section>
+
+        <!-- Sekce Umělci -->
+        <section>
+            <label for="dropdown-toggle-artists" class="dropdown-toggle">Umělci</label>
+            <input type="checkbox" id="dropdown-toggle-artists" class="dropdown-checkbox">
+            <div class="dropdown-content">
+            <p>Sekce Umělci je místem, kde můžete objevit a prozkoumat tvorbu vašich oblíbených hudebních interpretů. 
+                Zde najdete detailní informace o jednotlivých umělcích, jejich diskografii, kariéře, vlivu na hudební scénu a mnohem více. 
+                Každý profil obsahuje přehled alb, singlů, videoklipů, spoluprací a další relevantní informace, které vám pomohou lépe pochopit jejich hudební vývoj. <br>
+                Ať už hledáte nového interpreta, který by vás mohl zaujmout, nebo chcete získat hlubší vhled do kariéry svého oblíbeného umělce, naše databáze vám poskytne vše, co potřebujete. 
+                Kromě oficiálních informací můžete také diskutovat o jejich hudbě, sdílet své názory a doporučení s ostatními uživateli fóra. <br>
+                S každým umělcem, který je součástí naší databáze, můžete objevit příběhy, které se skrývají za jejich tvorbou. Věříme, že vám tato sekce pomůže nejen rozšířit vaše hudební obzory, ale také se připojit k diskusím a sdílet svou vášeň pro hudbu s ostatními.</p>
+            <a style="color: green" href="umelci.html">Hledat umělce nyní</a>
+            </div>
+        </section>
+
+        <!-- Sekce Vydání -->
+        <section>
+            <label for="dropdown-toggle-releases" class="dropdown-toggle">Vydání</label>
+            <input type="checkbox" id="dropdown-toggle-releases" class="dropdown-checkbox">
+            <div class="dropdown-content">
+            <p>V sekci Vydání se můžete těšit na pravidelný přehled nových a nadcházejících alb, singlů a EP. 
+                Prozkoumejte vydání, která právě vychází, nebo se podívejte na ta, která vám unikla. 
+                Každé album obsahuje podrobné informace o interpretovi, tracklistu, datu vydání a mnoho dalšího. 
+                Naší misí je poskytnout vám co nejrychlejší přehled o novinkách a pomoci vám objevit hudbu, která vás může inspirovat.
+                Nezapomeňte také sdílet své názory a doporučení s ostatními uživateli!
+            </p>
+            <a style="color: green" href="vydani.html">Hledat vydání nyní</a>
+            </div>
+        </section>
+
+        <!-- Sekce Fórum -->
+        <section>
+            <label for="dropdown-toggle-forum" class="dropdown-toggle">Forum</label>
+            <input type="checkbox" id="dropdown-toggle-forum" class="dropdown-checkbox">
+            <div class="dropdown-content">
+            <p>Na našem fóru můžete diskutovat o všem, co se týká hudby. 
+                Ať už chcete podělit o své oblíbené skladby, debatovat o aktuálních trendech v hudebním průmyslu nebo si povídat o koncertních zážitcích, naše fórum je ideálním místem pro vaše myšlenky. 
+                Připojte se k tématům, která vás zajímají, nebo vytvořte nové diskuse, ve kterých budete moci sdílet své zkušenosti a názory. 
+                Respekt a otevřenost jsou pro nás prioritou, takže se nebojte vyjádřit svůj názor – u nás je každý názor vítán!
+            </p>
+            <a style="color: green" href="forum.html">Prohlížet příspěvky nyní</a>
+            </div>
+        </section>
+
+        <!-- Sekce Žánry -->
+        <section>
+            <label for="dropdown-toggle-genres" class="dropdown-toggle">Žánry</label>
+            <input type="checkbox" id="dropdown-toggle-genres" class="dropdown-checkbox">
+            <div class="dropdown-content">
+            <p>Naší hudební databází prochází všechny možné žánry, které hudba nabízí. 
+                V sekci Žánry se můžete seznámit s historií a charakteristikami jednotlivých hudebních stylů, prozkoumat alby a umělce, kteří je reprezentují, a najít doporučení na novou hudbu podle svého vkusu. 
+                Ať už máte rádi klasický rock, moderní pop, alternativní elektroniku nebo třeba jazz, v naší databázi máte všechny žánry na dosah ruky. <br>
+                Každý žánr je rozdělen do podkategorií, takže snadno najdete to, co hledáte. Těšíme se na vaše oblíbené žánry a diskuze, které nás všechny mohou obohatit.</p>
+            <a style="color: green" href="zanry.html">Prohlížet žánry nyní</a>
+            </div>
+        </section>
+</body>
+</html>

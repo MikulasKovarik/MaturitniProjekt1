@@ -1,0 +1,289 @@
+/* Resetování margin a padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(Showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/*.navbar .logo img {
+    height: auto; 
+    max-width: 25%;
+}*/
+
+.nav-links {
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    max-width: auto;
+    padding: 5px 150px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #8c00ff;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    margin-top: 80px;
+}
+
+section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin: 20px auto;
+    background-color: #251a88;
+    border-radius: 8px;
+    
+
+/* Responsivní design */
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo img {
+        height: 30px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+
+#uvod {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+  }
+  
+ /* Dropdown tlačítko */
+.dropdown-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #1f855a;
+  }
+  
+  /* Schovat checkbox pro dropdown text */
+  .dropdown-checkbox {
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    padding: 10px 50px;
+  }
+  
+  .dropdown-checkbox:checked + .dropdown-content {
+    display: block;
+  }
+  
+  /* Styl paragrafů pro dropdown text */
+  .dropdown-content p, .dropdown-content ul li{
+    color: #fff;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    list-style-type: circle;
+  }
+
+#searchInput {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#artistsList {
+    background-color: #fff;
+    text-align: center;
+    margin: 50px 800px;
+    text-decoration: none;
+}
+
+#genres {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Fórum */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #3f4b91;
+}
+
+.post-container {
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ebebeb;
+    border-left: 5px solid #5c6bc0;
+}
+
+.post h3 {
+    color: #5c6bc0;
+}
+
+.post p {
+    color: #555;
+}
+
+
+/*Vyhledávač vydání*/
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.search-container input, .search-container select {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #3f4b91;
+    transition: background-color 0.2s;
+}
+
+/*Styly pro vydání*/
+.albums-container {
+    margin-top: 40px;
+}
+
+.album {
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.album h3 {
+    color: #5c6bc0;
+    margin-bottom: 10px;
+}
+
+.album p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.album .genre {
+    font-weight: bold;
+    color: #5c6bc0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--font awesome ikony-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="projekt1.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="umelci.html">Umělci</a></li>
+                <li><a href="vydani.html">Vydání</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+                <li><a href="zanry.html">Žánry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="uvod">
+        <p>Vítejte na naší hudební databázi – místě, kde můžete sdílet své hudební zážitky, názory, recenze a informace o hudebních projektech. 
+            Tato platforma je určena pro všechny, kteří mají zájem o hudbu a chtějí se podělit o své myšlenky s ostatními. <br><br>
+            Na této stránce můžete přidávat příspěvky o hudebních událostech, albech, interpretech nebo jakýchkoli hudebních tématech, která vás zajímají. <br> <br>
+            Každý příspěvek obsahuje pole pro Alias, což je jméno nebo pseudonym, pod kterým se příspěvek objeví, Nadpis/předmět, který vystihuje téma příspěvku, a Hlavní text, kde můžete podrobněji popsat svůj názor, recenzi nebo informace. <br>
+            Zadejte své jméno (alias) do formuláře,
+            zadejte název (nadpis/předmět) svého příspěvku,
+            napište hlavní text, kde můžete podělit o své myšlenky a názory. <br>
+            Poté klikněte na tlačítko Odeslat a váš příspěvek se objeví na stránce pro ostatní uživatele, kteří se mohou připojit k diskuzi. <br><br>
+            Na stránce můžete také procházet příspěvky ostatních a inspirovat se jejich názory, což vytváří komunitu, kde každý může sdílet své hudební objevy a zkušenosti.
+            <br><br>
+            Připojte se k nám a podělte se o svou lásku k hudbě!
+            </p>
+    </section>
+    <!--Formulář pro přidání příspěvku-->
+    <div class="form-container">
+        <h2>Přidat nový příspěvek</h2>
+        <form action="#" method="POST">
+            <label for="alias">Alias:</label>
+            <input type="text" id="alias" name="alias" placeholder="Zadejte alias" required>
+
+            <label for="subject">Nadpis/Předmět:</label>
+            <input type="text" id="subject" name="subject" placeholder="Zadejte nadpis" required>
+
+            <label for="main-text">Hlavní text:</label>
+            <textarea id="main-text" name="main-text" rows="6" placeholder="Zadejte hlavní text" required></textarea>
+
+            <button type="submit">Odeslat</button>
+        </form>
+    </div>
+
+    <!-- Sekce pro zobrazení příspěvků (zatím prázdná)-->
+    <div class="post-container">
+        <div class="post">
+            <h3>Alias1 - Nadpis/Předmět 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae tristique metus. Suspendisse potenti.</p>
+        </div>
+        <div class="post">
+            <h3>Alias2 - Nadpis/Předmět 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae tristique metus. Suspendisse potenti.</p>
+        </div>
+    </div>
+</body>
